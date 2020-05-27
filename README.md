@@ -7,15 +7,21 @@ It takes the variables of a model rocket and outputs either
 
 In the bottom of the code in the main function are the global rocket variables that can be set:
 
-  These are for the basic newtonian physics
+  These are for the basic newtonian physics:
+  
+  
 	total_impulse = Newton metres per second of the motor
 	duration_of_thrust = in seconds
   
-  These are for the shared variables
+  These are for the shared variables:
+  
+  
 	liftoff_weight = in kgs
 	frontal_area = in metres squared
 	propellant_weight = in kgs
   
   There are 4 motor profiles taken from the NAR website and hard-coded
-	these are used for aerodynamic profile
+	these are used for aerodynamic profile:
+	
+	
   motor = Motor can be A,B,C or D
