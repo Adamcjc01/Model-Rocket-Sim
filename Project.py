@@ -121,10 +121,12 @@ def CreateBurnData(time,thrust):
 	return velocity, acceleration, altitude, v, s, t
 
 def PlotBurnData(time,velocity,acceleration,altitude):
-	plt.plot(time,velocity, label = 'Velocity (ms)')
-	plt.plot(time,acceleration, label = 'Acceleration (ms^2)')
+	plt.plot(time,velocity, label = 'Velocity ($ms^{-1}$)')
+	plt.plot(time,acceleration, label = 'Acceleration ($ms^{-2}$)')
 	plt.plot(time,altitude, label = 'Altitude (ft)')
 	plt.title("Initial Burn flight characteristics")
+	plt.ylabel("Value")
+	plt.xlabel("Time (s)")
 	plt.legend()
 	plt.show()
 
@@ -152,8 +154,9 @@ def CreateCoastData(v,s,t):
 def PlotBurnToLandAlt(iterator,time,coast_altitude,altitude):
 	
 	plt.plot(time+iterator,altitude+coast_altitude, label = 'Altitude (ft)')
-	plt.title("Altitude of flight")
-	plt.legend()
+	plt.title("Profile of flight")
+	plt.xlabel("Time (s)")
+	plt.ylabel("Altitude (ft)")
 	plt.show()
 
 if __name__ == '__main__':
