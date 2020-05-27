@@ -2,8 +2,9 @@
 A python based mathematical physics simulator for model rocketry.
 
 It takes the variables of a model rocket and outputs either 
-  a) the basic physics from Netown's laws without aerodynamics - max velocity, max alt
-  b) two sets of plots, one of the burn characteristics and one of the full flight profile
+
+  	a) the basic physics from Netown's laws without aerodynamics - max velocity, max alt
+  	b) two sets of plots, one of the burn characteristics and one of the full flight profile
 
 In the bottom of the code in the main function are the global rocket variables that can be set:
 
@@ -24,4 +25,4 @@ In the bottom of the code in the main function are the global rocket variables t
 	these are used for aerodynamic profile:
 	
 	
-  motor = Motor can be A,B,C or D
+  	motor = Motor can be A,B,C or D
